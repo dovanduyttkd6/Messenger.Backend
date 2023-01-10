@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>9d137aa2-9e80-4562-bc1b-2422e5954706</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Properties\launchSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.25.1" />
+  </ItemGroup>
+
+</Project>
